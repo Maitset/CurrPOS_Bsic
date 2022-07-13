@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--[if IE 9]>         <html class="ie9" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--> <html lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+
+        <title>BSIC</title>
+
+        
+        <meta name="author" content="bsic">
+        <meta name="robots" content="noindex, nofollow">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0">
+
+        <!-- Favicons (just the basics for now, check out http://realfavicongenerator.net/ for all available) -->
+        <link rel="shortcut icon" href="assets/img/logo.png">
+        <link rel="icon" type="image/png" href="assets/img/logo.png" sizes="100x100">
+
+        <!-- Web fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,600,700&Open+Sans:300,400,600,700">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+
+        <!-- Bootstrap and bsic CSS -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+        <link rel="stylesheet" href="assets/css/bsic.css">
+		<link rel="stylesheet" href="assets/css/style.css">
+		 <script type="text/javascript">
+        // default pyodide files URL (packages.json, pyodide.asm.data etc)
+        window.languagePluginUrl = 'https://pyodide-cdn2.iodide.io/v0.15.0/full/';
+    </script>
+    <script src="https://pyodide-cdn2.iodide.io/v0.15.0/full/pyodide.js"></script>
+    </head>
+	<canvas id="canvas"width="1280" height="720" ></canvas>
+    <body>
+        <!-- Page Container -->
+        <!--
+            Available Classes: 'modern-sf', 'vintage-sf', 'interstellar-sf'
+        -->
+        <div id="page-container" class="modern-sf">
+            <!-- Header -->
+            <header id="page-header">
+                <div class="h3 text-right pull-right hidden-xs">
+                </div>
+                
+            </header>
+            <!-- END Header -->
+
+            <!-- Main Content -->
+            <main id="page-main">
+			
+			
+			
+                <!-- Columns -->
+                <div class="row">
+                   
+                            </div>
+							         <audio id="beep-load" controls="controls" preload="autoplay" class="visibility-hidden">
+				                      <source src="assets/sounds/deploy.mp3"></source>
+									  <source src="assets/sounds/deploy.ogg"></source>
+			                      </audio>
+						
+									
+                            </span>
+                        </div>
+						        <audio id="beep-one" controls="controls" preload="autoplay" class="visibility-hidden">
+				                 <source src="assets/sounds/hover.mp3"></source>
+				                 <source src="assets/sounds/hover.ogg"></source>
+			                 </audio>
+						
+                        <div class="row"> <ul id="nav-one" class="nav">
+                            <div class="col-xs-6 visibility-hidden" data-toggle="appear" data-class="animated fadeInLeft" data-timeout="10000">
+                                <button class="inside-link-sf- btn btn-xl btn-block btn-sf push-10"  ><a class="link-sf font-w300" href="bsic.php" onclick="audio.play ( )">GLDH_ADMINS</button>
+                            </div>
+                            <div class="col-xs-6 visibility-hidden" data-toggle="appear" data-class="animated fadeInRight" data-timeout="10000">
+                                <button class="btn btn-xl btn-block btn-sf push-10"><a class="link-sf font-w300" href="signals.php" onclick="audio.play ( )">SIGNALS_DP_LOG</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Animated Circles Column -->
+					 </div>
+                    <!-- END Columns -->
+                     
+                  
+                <!-- Page Footer -->
+                <div class="block">
+                  
+                    </div>
+                </div>
+                <!-- END Page Footer -->
+            </main>
+            <!-- END Main Content -->
+        </div>
+        <!-- END Page Container -->
+
+        <!-- Scripts -->
+        <script src="assets/js/core/jquery.min.js"></script>
+        <script src="assets/js/plugins/jquery.appear.min.js"></script>
+        <script src="assets/js/plugins/jquery.countTo.min.js"></script>
+        <script src="assets/js/plugins/jquery.easypiechart.min.js"></script>
+		<script src="assets/matrix.js"></script>
+        <script src="assets/js/ares.js"></script>
+
+        <!-- Page JS Code -->
+        <script>
+            jQuery(function(){
+                // Init page helpers (Appear + CountTo + Easy Pie Chart plugins)
+                Ares.initHelpers(['appear', 'appear-countTo', 'easy-pie-chart']);
+            });
+			var beepOne = $("#beep-one")[0];
+                                 $("#nav-one a")
+	                           .mouseenter(function() {
+	                        	beepOne.play();
+                       	});
+        </script>
+		<script>
+var audio = new Audio("assets/sounds/deploy.mp3 ");
+audio.oncanplaythrough = function ( ) { }
+audio.onended = function ( ) { }
+</script>
+<script>
+var audio = new Audio("../assets/sounds/error.mp3 ");
+audio.oncanplaythrough = function ( ) { }
+audio.onended = function ( ) { }
+</script>
+<script>var beepload = $("#beep-load")[0];
+       $("#nav-load a")
+	      .mouseenter(function() {
+	beepload.play();
+                });</script>
+</body>
+</html>
